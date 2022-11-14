@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 30px;
+    background-color: green;
+    border: 5px solid black;
+    text-align: center;
+}
+
+nav{
+    margin: 5%;
+    float: left;
+    width: 20%;
+    text-align: center;
+    background-color: green;
+    border: 5px solid  black;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid green;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    display: block;
+    color: aquamarine;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/*Change color the link color on hover*/
+nav ul li a hover {
+    background-color:#555;
+    color: white;
+}
+article{
+    float:right;
+    width: 80%;
+    background-color: green;
+    border: 1px sollid greenyellow;
+    padding: 0 20px; 
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.satu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aqua;
+}
+
+.dua{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: bisque;
+}
