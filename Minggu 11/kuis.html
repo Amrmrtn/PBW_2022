@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Java Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2>Data Nama Mahasiswa</h2>
+    <form action="javascript:void(0);" method="post" onsubmit="alert('Tombol diklik!')">
+        <input type="text" placeholder="Isikan Nama Mhs" id="tambahNama">
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+            <!-- Dinamis Pakai JS-->
+    </div>
+    <table border="1">
+        <thead>
+            <tr><td>Daftar Nama</td></tr>
+        </thead>
+        <tbody id="daftarNama"> 
+            <!-- Dinamis pakai Javascript-->
+        </tbody>
+    </table>
+    <script>
+     var app = new function (){
+         this.el=getElementById('daftar nama');
+         this.mhs=["Ammar","Aziz", "Adi", "Ferry"];
+
+         this.barisAll = function(){
+             var Data=' ';
+             if(this.mhs.length>0) {
+                 for(i=0; i < tjis.mhs.length; i++) {
+                     data += '<tr>';
+                     data += '<td>'+ this.mhs[i]+'</td>';
+                     data += '</tr>';
+                }
+            }
+            this.Count(this.mhs.lebgth)
+         return this.el.ineerHTML = data;
+        }
+         this.Count = function(data){
+             //untuk mengisi counter
+             var count=document.getElementById('counter');
+             if(data){
+                 count.innerHTML=data + 'Mahasiswa';
+             }else{
+                 count.innerHTML='data kosong';
+             }
+         }
+         this.Add = function(){
+             //untuk tambah nama
+         }
+     }
+     app.barisanAll();
+    </script>
+</body>
+</html>          
